@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Varela+Round&display=swap');
+
+/* I HAVE COMMENTED IN THE CSS FOR EASY UNDERSTANDING  */
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Chakra Petch', sans-serif;
+    line-height: 1.6;
+    background-color: #0f0f10;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #040404;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav__logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav__links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav__links .link {
+    margin-right: 2rem;
+  }
+  
+  .nav__links .link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__links .link a:hover {
+    color: #65ffda;
+  }
+  
+  /* Header styles */
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #070708;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid #65ffda;
+  }
+  
+  .header__content {
+    max-width: 600px;
+  }
+  
+  .header__content h4 {
+    font-size: 1.4rem;
+    color: #65ffda;
+  }
+  
+  .header__content h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+  }
+  
+  .header__content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header__content .btn {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    background-color: #65ffda;
+    color: #0f0f10;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header__content .btn:hover {
+    background-color: #4cc0a1;
+  }
+  
+  .header__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a sleek shadow */
+  }
+  
+  /* About Section styles */
+  .section__container {
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    background-color: #040404;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .section__header {
+    font-size: 2.2rem;
+    color: #65ffda;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section__subheader {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+  
+  /* Courses Section styles */
+  .explore__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .explore__card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .explore__card:hover {
+    transform: scale(1.05);
+  }
+  
+  .explore__card span {
+    font-size: 1.1rem;
+    color: #65ffda;
+    margin-bottom: 0.5rem;
+  }
+  
+  .explore__card h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .explore__card p {
+    font-size: 1rem;
+    color: #bbb;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .explore__card .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #65ffda;
+    color: #0f0f10;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .explore__card .btn:hover {
+    background-color: #4cc0a1;
+  }
+  
+/* Code Drops Section styles */
+.code-drops {
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    background-color: #040404;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.code-drops .section__header {
+    color: #65ffda;
+}
+
+.code-drops__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.code-drop__card {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 400px;  
+}
+
+.code-drop__card:hover {
+    transform: scale(1.05);
+}
+
+.code-drop__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #0f0f10;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.code-drop__title {
+    font-size: 0.9rem;
+    color: #65ffda;
+}
+
+.code-drop__controls {
+    display: flex;
+    gap: 10px;
+}
+
+.code-drop__button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #252525;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.code-drop__button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.code-drop__button::before {
+    content: '';
+    display: block;
+    font-size: 1.2rem;
+}
+
+.code-drop__button--maximize::before {
+    content: '○'; 
+    color: #f3c300; 
+}
+
+.code-drop__button--minimize::before {
+    content: '—'; /* yk...Unicode character for minimize (horizontal line) */
+    color: #65ffda;
+}
+
+.code-drop__button--close::before {
+    content: '×'; /* yk.. Unicode character for close (multiplication symbol) */
+    color: #ff4545; 
+}
+
+.code-drop__content {
+    margin: 0;
+    padding: 1rem;
+    background-color: #0f0f10; /* this adds Dark background for editor effect */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+    flex: 1; /* Allow code content to expand vertically */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto; /* idk,allow scrolling if content exceeds container */
+}
+
+.code-drop__content code {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    color: #ddd;
+    display: block;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    text-align: left; 
+    flex: 1; 
+}
+
+.code-drop__content code span.token.comment {
+    color: #6a737d;
+}
+
+.code-drop__content code span.token.keyword {
+    color: #d73a49;
+}
+
+.code-drop__content code span.token.function {
+    color: #6f42c1;
+}
+
+.code-drop__content code span.token.string {
+    color: #032f62;
+}
+
+.code-drop__content code span.token.punctuation {
+    color: #ddd;
+}
+
+.code-drop__content code span.token.tag {
+    color: #0184bb;
+}
+
+.code-drop__content code span.token.attr-name {
+    color: #50a14f;
+}
+
+.code-drop__content code span.token.attr-value {
+    color: #a31515;
+}
+
+.code-drop__content code span.token.operator {
+    color: #d73a49;
+}
+
+.code-drop__content code span.token.number {
+    color: #005cc5;
+}
+
+.btn--copy {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    background-color: #65ffda;
+    color: #0f0f10;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn--copy:hover {
+    background-color: #4cc0a1;
+}
+  
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+  }
+  
+  .footer__col {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .footer__col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__col p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer__col .btn {
+    padding: 0.7rem 2rem;
+    background-color: #65ffda;
+    color: #0f0f10;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer__col .btn:hover {
+    background-color: #4cc0a1;
+  }
+  
+  /* Footer Bar styles */
+  .footer__bar {
+    background-color: #040404;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+  
+  .footer__bar p {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .header__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header__image img {
+      margin-top: 2rem;
+    }
+  
+    .nav__links {
+      display: none;
+    }
+  
+    .explore__grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer__container {
+      flex-direction: column;
+    }
+  }
+
+  /* Smooth Scroll */
+
+.code-drop__content {
+    overflow-y: scroll; /* iirc, Enable vertical scrolling */
+    scrollbar-width: thin; /* iirc, Customize scrollbar width */
+    scrollbar-color: #65ffda #040404; /* iirc, Customize scrollbar color */
+}
+
+.code-drop__content::-webkit-scrollbar {
+    width: 8px; /* Set scrollbar width */
+}
+
+.code-drop__content::-webkit-scrollbar-track {
+    background: #040404; /* for custom scrollbar track color iirc */
+}
+
+.code-drop__content::-webkit-scrollbar-thumb {
+    background-color: #65ffda; 
+    border-radius: 10px; 
+}
+
+.btn--copy {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #65ffda;
+    color: #0f0f10;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transfrm transition */
+    border: none;
+    cursor: pointer; /* Change cursor to pointr */
+    z-index: 1; /* Ensre button is above code content */
+}
+
+.btn--copy:hover {
+    background-color: #4cc0a1;
+    transform: scale(1.1); /* Scale up on hover */
+}
+  
+/* Copy Code Button for Mobile Screens */
+@media (max-width: 768px) {
+    .btn--copy {
+      position: static; /* for responsiveness... reset position for mobile */
+      width: 100%; /* Full width on mobile */
+      margin-top: 1rem; /* Adjust spacing hmm */
+    }
+  }
