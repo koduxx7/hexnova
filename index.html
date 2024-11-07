@@ -8,7 +8,6 @@
   <meta name="keywords" content="tech hub, developers, coding, programming, developer community, tech community, hexnova, hexnova tech hub">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="faviconlogo.png">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="HexNova - Tech Hub for Developers">
@@ -16,353 +15,79 @@
   <meta property="og:image" content="https://cyrax.one/imgs/CyraxRefora.png">
   <meta property="og:url" content="https://hexnova.org/">
   <meta property="og:type" content="website">
-
-</head>
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://hexnova.org/">
-
-
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="nav__logo">HexNova</div>
-    <ul class="nav__links">
-      <li class="link"><a href="#about">About</a></li>
-      <li class="link"><a href="#courses">Courses</a></li>
-      <li class="link"><a href="#code-drops">Code Drops</a></li>
-      <li class="link"><a href="#connect">Connect</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="header__container">
-    <div class="header__content">
-      <h4>Welcome to HexNova</h4>
-      <h1>Innovate. Educate. Lead.</h1>
-      <p>HexNova is a Community Hub For Developers! Let's Code, Create, Innovate Together.</p>
-      <a href="#courses" class="btn">Explore!</a>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="hexnovalogo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#projects-page">Projects</a></li>
+                <li><a href="#socials">Community</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="header__image">
-      <img src="IMG_1917.webp" alt="Tech Image">
-    </div>
-  </header>
 
-  <!-- About Section -->
-  <section class="section__container" id="about">
-    <h2 class="section__header">About HexNova</h2>
-    <p class="section__subheader">Welcome to HexNova, a premier Community Hub for Developers, Tech Enthusiasts, and like-minded individuals. Join us to connect with fellow developers, collaborate on projects, and enhance your skills in a supportive and engaging environment. Let's code, create, and innovate together while enjoying the journey. Below are some of our web apps you can try out now!</p>
-  </section>
-
-  <!-- Courses Section -->
-  <section class="section__container" id="courses">
-    <h2 class="section__header">Our Releases!</h2>
-    <div class="explore__grid">
-      <div class="explore__card">
-        <span>ByteBox</span>
-        <h4>Introducing ByteBox</h4>
-        <p>The Element Hub</p>
-        <a href="https://hexnova.org/" class="btn">Coming Soon</a>
-      </div>
-      <div class="explore__card">
-        <span>Coming Soon</span>
-        <h4>Coming Soon</h4>
-        <p>Coming Soon</p>
-        <a href="https://hexnova.org/" class="btn">Coming Soon</a>
-      </div>
-      <div class="explore__card">
-        <span>Coming Soon</span>
-        <h4>Coming Soon</h4>
-        <p>Coming Soon</p>
-        <a href="https://hexnova.org/" class="btn">Coming Soon</a>
-      </div>
-      <div class="explore__card">
-        <span>Coming Soon</span>
-        <h4>Coming Soon</h4>
-        <p>Coming Soon</p>
-        <a href="https://hexnova.org/" class="btn">Coming Soon</a>
-      </div>
-        
-    </div>
-  </section>
-
-<!-- Code Drops Section -->
-<section class="section__container code-drops" id="code-drops">
-  <h2 class="section__header">Code Drops</h2>
-  <p>Explore various code snippets that you can use in your projects. These drops include HTML and CSS examples showcasing different UI effects.</p>
-  <div class="code-drops__grid">
-    <!-- Code Drop Card 1 -->
-    <div class="code-drop__card">
-      <div class="code-drop__header">
-        <div class="code-drop__title">index.html</div>
-        <div class="code-drop__controls">
-          <div class="code-drop__button code-drop__button--maximize"></div>
-          <div class="code-drop__button code-drop__button--minimize"></div>
-          <div class="code-drop__button code-drop__button--close"></div>
+    <div class="heading-container fade-up">
+        <h1 class="heading">Crafting Visuals in Code</h1>
+        <div class="explore-cont">
+            <button class="explore">
+                Explore Projects
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
         </div>
-      </div>
-      <div class="code-drop__content">
-        <pre><code class="language-html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;title&gt;Custom Card Effect&lt;/title&gt;
-  &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class="container"&gt;
-    &lt;div class="card"&gt;
-      &lt;div class="face face1"&gt;
-        &lt;div class="content"&gt;
-          &lt;i class="fas fa-laptop-code"&gt;&lt;/i&gt;
-          &lt;h3&gt;Development&lt;/h3&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="face face2"&gt;
-        &lt;div class="content"&gt;
-          &lt;p&gt;Create responsive and interactive websites with modern technologies.&lt;/p&gt;
-          &lt;a href="#" class="custom-button"&gt;Learn More&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-        </code></pre>
-        <button class="btn--copy">Copy Code</button>
-      </div>
-      <p>This HTML code creates a 3D card UI effect with a front and back face that flips on hover, showcasing a simple web development project.</p>
     </div>
 
-    <!-- Code Drop Card 2 -->
-    <div class="code-drop__card">
-      <div class="code-drop__header">
-        <div class="code-drop__title">styles.css</div>
-        <div class="code-drop__controls">
-          <div class="code-drop__button code-drop__button--maximize"></div>
-          <div class="code-drop__button code-drop__button--minimize"></div>
-          <div class="code-drop__button code-drop__button--close"></div>
+    <div class="ad-cont fade-up">
+        <div class="ad">
+            <div class="new-tag">NEW</div>
+            <h3 class="upcoming">Upcoming Project</h3>
+            <p class="upcome-para">Check out our upcoming project, ByteBox. ByteBox is your go-to platform for free and amazing elements, for HTML, CSS, and Javascript!</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </div>
-      </div>
-      <div class="code-drop__content">
-        <pre><code class="language-css">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background: linear-gradient(135deg, #171717, #000000);
-    font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.card {
-    position: relative;
-    margin: 20px;
-    width: 300px;
-    height: 400px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-.card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s, box-shadow 0.8s;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card .face.face1 {
-    background: #0e0e0e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateY(0deg);
-}
-
-.card:hover .face.face1 {
-    transform: rotateY(180deg);
-    box-shadow: 
-        0 0 15px #03e9f4,
-        0 0 30px #03e9f4,
-        0 0 45px #03e9f4,
-        0 0 60px #03e9f4;
-}
-
-.card .face.face2 {
-    background: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    transform: rotateY(-180deg);
-}
-
-.card:hover .face.face2 {
-    transform: rotateY(0deg);
-}
-
-.card .face.face1 .content, .card .face.face2 .content {
-    text-align: center;
-    padding: 20px;
-}
-
-.card .face.face1 .content i {
-    font-size: 4em;
-    color: #03e9f4;
-    margin-bottom: 10px;
-    transition: transform 0.8s;
-}
-
-.card:hover .face.face1 .content i {
-    transform: rotate(360deg);
-}
-
-.card .face.face1 .content h3 {
-    font-size: 1.5em;
-    color: #fff;
-}
-
-.card .face.face2 .content {
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure content and button are spaced apart */
-    height: 100%; /* Occupy full height of the card */
-}
-
-.card .face.face2 .content p {
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 20px; /* Add margin to separate content and button */
-}
-
-.card .face.face2 .content .custom-button {
-    text-decoration: none;
-    color: white;
-    background: #03e9f4;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s ease, padding 0.3s ease;
-    align-self: center; /* Center the button horizontally */
-}
-
-/* Neon glow animation for the button */
-.custom-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(3, 233, 244, 0.5), transparent);
-    transition: 0.5s;
-    animation: neon-glow 1.5s infinite linear;
-}
-
-@keyframes neon-glow {
-    0% { left: -100%; }
-    50%, 100% { left: 100%; }
-}
-
-/* Responsive CSS */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-        margin: 15px 0;
-    }
-
-    .card .face.face1, .card .face.face2 {
-        width: 100%;
-    }
-}
-        </code></pre>
-        <button class="btn--copy">Copy Code</button>
-      </div>
-      <p>This CSS code styles the 3D card UI, including hover effects and responsive design, to create a visually appealing interactive card effect.</p>
     </div>
-  </div>
-</section>
 
-  
-  <!-- Connect Section -->
-  <section class="section__container" id="connect">
-    <h2 class="section__header">Connect with Us</h2>
-    <div class="footer__container">
-      <div class="footer__col">
-        <h4>Join our Discord</h4>
-        <p>Stay connected and join our community on Discord for the latest updates and discussions.</p>
-        <a href="https://discord.gg/Y9cepbwp93" class="btn">Join Discord</a>
-      </div>
-      <div class="footer__col">
-        <h4>Follow us on Instagram</h4>
-        <p>Follow us on Instagram to get a glimpse of our latest activities and events.</p>
-        <a href="https://instagram.com/hexnovatech" class="btn">Follow on Instagram</a>
-      </div>
+    <div class="about-us fade-up" id="about-us">
+        <h1 class="about-hexnova">About HexNova</h1>
+        <p class="about-para">HexNova is a dynamic startup dedicated to building a thriving community for developers. <br>It brings together passionate creators to collaborate on innovative web app projects. Through shared resources and collaborative tools, HexNova empowers developers to enhance their skills and bring ideas to life. The platform is designed to foster growth, creativity, and real-world impact in web app development.</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer__bar">
-    <p>&copy; 2024 HexNova. All Rights Reserved.</p>
-  </footer>
+    <div class="projects-page fade-up" id="projects-page">
+        <h1 class="projects-heading">Projects</h1>
+        <div class="cards-container">
+            <div class="card">
+                <h1>ByteBox</h1>
+                <p>Welcome to ByteBox, your go-to source for free HTML, CSS, and JavaScript components. We provide a variety of pre-built elements like responsive layouts, forms, and animations to help streamline your development. All resources are designed to be easily integrated into your projects, saving you time and effort. Build faster, smarter, and without limitations with our free, high-quality code.</p>
+                <button>Coming Soon</button>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
-  <script>
-    document.querySelectorAll('pre code').forEach((block) => {
-      Prism.highlightElement(block);
-    });
+            <div class="card2">
+                <h1>Coming Soon</h1>
+                <p>Coming Soon</p>
+                <button>Coming Soon</button>
+            </div>
 
-    const copyButtons = document.querySelectorAll('.btn--copy');
-    copyButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const codeBlock = button.previousElementSibling.querySelector('code');
-        const range = document.createRange();
-        range.selectNode(codeBlock);
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        button.textContent = 'Copied!';
-        setTimeout(() => {
-          button.textContent = 'Copy Code';
-        }, 2000);
-      });
-    });
-  </script>
+            <div class="card3">
+                <h1>Coming Soon</h1>
+                <p>Coming Soon</p>
+                <button>Coming Soon</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="phrase fade-up" id="socials">
+        <h1 class="code-create-visualize">Join our community!</h1>
+        <p class="phrase-para">Stay connected and join our community for the latest updates and discussions.</p>
+        <button onclick="window.location.href='https://discord.gg/Y9cepbwp93'"><i class="fa-brands fa-discord"></i></button>
+        <button onclick="window.location.href='https://www.instagram.com/hexnovatech';"><i class="fa-brands fa-instagram"></i></button>
+    </div>
+    
+    <div class="endbar">
+        © 2024 HexNova. All Rights Reserved.
+    </div>    
+
+    <script src="script.js"></script>
 </body>
 </html>
