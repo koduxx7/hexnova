@@ -37,3 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.getElementById('scrollButton').addEventListener('click', function() {
+    document.getElementById('projects-page').scrollIntoView({
+        behavior: 'smooth',  // Smooth scroll effect
+        block: 'start'       // Align the target div at the top
+    });
+});
+
