@@ -37,7 +37,6 @@ body::before {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
 }
 
 /* Edge Aurora effect */
@@ -80,6 +79,7 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-right {
@@ -202,21 +202,27 @@ body::before {
         padding: 0.8rem 1.5rem;
     }
 
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
     .nav-right {
         display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        max-width: 1000px;
         background-color: rgba(30, 41, 59, 0.95);
         backdrop-filter: blur(10px);
         flex-direction: column;
-        padding: 1rem;
-        margin-top: 10px;
+        padding: 1.5rem;
         border-radius: 15px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
+        z-index: 999;
+        animation: slideDown 0.3s ease-out;
     }
 
     .nav-right.active {
@@ -225,6 +231,20 @@ body::before {
 
     .mobile-menu-btn {
         display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        padding: 5px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
     }
 
     .nav-links {
@@ -232,6 +252,8 @@ body::before {
         width: 100%;
         align-items: center;
         gap: 1rem;
+        margin: 0;
+        padding: 0;
     }
 
     .nav-links a {
@@ -239,6 +261,7 @@ body::before {
         width: 100%;
         text-align: center;
         display: block;
+        font-size: 1.1rem;
     }
 
     .auth-buttons {
@@ -250,6 +273,20 @@ body::before {
 
     .login-btn, .signup-btn {
         width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+        display: block;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
